@@ -1,0 +1,112 @@
+/* Stinto content blocks added outside Elementor: 4-step strip, FAQ, closing CTA, hero extras.
+   Colours and font follow the Elementor kit (post-4733.css). */
+.sb {
+  --sb-ink: #0d4644;
+  --sb-ink-soft: #255957;
+  --sb-card: #d5dede;
+  --sb-green: #1aec7c;
+  --sb-white: #ffffff;
+  font-family: "CircularXX", "Poppins", -apple-system, "Segoe UI", Roboto, sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 20px;
+  color: var(--sb-white);
+}
+.sb *, .sb *::before, .sb *::after { box-sizing: inherit; }
+.sb h2 { font-family: inherit; font-weight: 300; font-size: clamp(1.75rem, 3.2vw, 2.75rem); line-height: 1.15; margin: 0 0 12px; color: inherit; }
+.sb h3 { font-family: inherit; font-weight: 500; font-size: 1.15rem; line-height: 1.3; margin: 0 0 8px; color: inherit; }
+.sb p { margin: 0 0 12px; font-size: 1rem; line-height: 1.55; }
+.sb-lead { opacity: .85; max-width: 46rem; margin-bottom: 28px !important; }
+
+/* Buttons. Selectors are scoped (:is(.sb, .sb-hero) ...) so they outrank the theme's
+   ".elementor-kit-4733 a" link colour rule. */
+:is(.sb, .sb-hero) .sb-btn, :is(.sb, .sb-hero) .sb-btn:visited {
+  display: inline-block; padding: 12px 26px; border-radius: 25px; font-weight: 500; font-size: 1rem; line-height: 1.2;
+  text-decoration: none; background: #1aec7c; color: #0d4644; border: 2px solid #1aec7c;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+:is(.sb, .sb-hero) .sb-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(26, 236, 124, .35); color: #0d4644; }
+.sb .sb-btn--ghost, .sb .sb-btn--ghost:visited { background: transparent; color: var(--sb-white); border-color: rgba(255, 255, 255, .6); }
+.sb .sb-btn--ghost:hover { color: var(--sb-white); box-shadow: none; border-color: var(--sb-white); }
+:is(.sb, .sb-hero) .sb-btn:focus-visible { outline: 3px solid #0d4644; outline-offset: 3px; }
+
+/* Hero extras appended under an existing Elementor heading */
+.sb-hero { margin-top: 18px; font-family: "CircularXX", "Poppins", -apple-system, sans-serif; }
+.sb-hero p { font-size: 1.125rem; line-height: 1.55; margin: 0 0 20px; max-width: 44rem; margin-left: auto; margin-right: auto; color: inherit; opacity: .9; }
+.sb-hero--left p { margin-left: 0; }
+.sb-hero--dark { color: #0d4644; }
+.sb-hero--light { color: #ffffff; }
+
+/* 4-step strip */
+.sb-steps-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; counter-reset: sbstep; }
+.sb .sb-step a {
+  display: block; height: 100%; padding: 22px 20px; border-radius: 20px; text-decoration: none;
+  background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .14); color: var(--sb-white);
+  transition: background .15s ease, border-color .15s ease;
+}
+.sb .sb-step a:hover { background: rgba(255, 255, 255, .11); border-color: rgba(255, 255, 255, .3); }
+.sb-step-num { display: inline-flex; width: 30px; height: 30px; border-radius: 50%; align-items: center; justify-content: center; font-size: .875rem; font-weight: 600; background: rgba(255, 255, 255, .14); margin-bottom: 14px; }
+.sb-step p { opacity: .8; font-size: .95rem; margin: 0; }
+.sb .sb-step.is-current a { background: var(--sb-card); border-color: var(--sb-card); color: var(--sb-ink); }
+.sb-step.is-current .sb-step-num { background: var(--sb-green); color: var(--sb-ink); }
+.sb-step.is-current p { opacity: .9; }
+.sb-step-here { display: inline-block; margin-left: 8px; font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--sb-ink-soft); }
+
+/* Strip placed inside a light grey Elementor card */
+.sb.sb--light { color: var(--sb-ink); padding-left: 0; padding-right: 0; }
+.sb.sb--light .sb-step a { background: rgba(13, 70, 68, .06); border-color: rgba(13, 70, 68, .14); color: var(--sb-ink); }
+.sb.sb--light .sb-step a:hover { background: rgba(13, 70, 68, .1); border-color: rgba(13, 70, 68, .3); }
+.sb.sb--light .sb-step-num { background: rgba(13, 70, 68, .12); }
+.sb.sb--light .sb-step.is-current a { background: var(--sb-ink); border-color: var(--sb-ink); color: var(--sb-white); }
+.sb.sb--light .sb-step.is-current .sb-step-num { background: var(--sb-green); color: var(--sb-ink); }
+.sb.sb--light .sb-step-here { color: var(--sb-green); }
+.sb.sb--light .sb-card, .sb.sb--light .sb-card:visited { background: #ffffff; border: 1px solid rgba(13, 70, 68, .12); }
+
+/* Capture channels / feature cards */
+.sb-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.sb-cards--3 { grid-template-columns: repeat(3, 1fr); }
+.sb .sb-card, .sb .sb-card:visited { display: block; padding: 24px 20px; border-radius: 20px; background: var(--sb-card); color: var(--sb-ink); text-decoration: none; }
+.sb a.sb-card:hover { box-shadow: 0 8px 24px rgba(0, 0, 0, .18); color: var(--sb-ink); }
+.sb-card p { margin: 0; opacity: .85; }
+.sb-card .sb-more { display: inline-block; margin-top: 12px; font-weight: 600; font-size: .9rem; }
+
+/* Feature (single highlighted statement) */
+.sb-feature { background: var(--sb-card); color: var(--sb-ink); border-radius: 28px; padding: 40px 36px; }
+
+/* FAQ */
+.sb-faq-list { border-top: 1px solid rgba(255, 255, 255, .2); text-align: left; max-width: 52rem; margin: 0 auto; }
+.sb-faq h2 { text-align: center; }
+.sb-faq details { border-bottom: 1px solid rgba(255, 255, 255, .2); }
+.sb-faq summary {
+  cursor: pointer; list-style: none; padding: 20px 40px 20px 0; position: relative;
+  font-size: 1.1rem; font-weight: 500; color: var(--sb-white);
+}
+.sb-faq summary::-webkit-details-marker { display: none; }
+.sb-faq summary::after { content: "+"; position: absolute; right: 6px; top: 50%; transform: translateY(-50%); font-size: 1.5rem; font-weight: 300; color: var(--sb-green); }
+.sb-faq details[open] summary::after { content: "−"; }
+.sb-faq summary:focus-visible { outline: 2px solid var(--sb-green); outline-offset: 2px; }
+.sb-faq details p { padding: 0 40px 20px 0; opacity: .85; margin: 0; }
+
+/* Closing CTA */
+.sb-cta-box { background: var(--sb-card); color: var(--sb-ink); border-radius: 28px; padding: 48px 32px; text-align: center; }
+.sb-cta-box .sb-lead { margin-left: auto; margin-right: auto; }
+.sb-cta-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 18px; }
+.sb .sb-cta-box .sb-btn--ghost, .sb .sb-cta-box .sb-btn--ghost:visited { color: var(--sb-ink); border-color: var(--sb-ink); }
+.sb .sb-cta-box .sb-btn--ghost:hover { color: var(--sb-ink); background: rgba(13, 70, 68, .06); }
+.sb-cta-trust { font-size: .875rem; opacity: .75; margin: 0 !important; }
+
+@media (max-width: 1024px) {
+  .sb-steps-list, .sb-cards { grid-template-columns: repeat(2, 1fr); }
+  .sb-cards--3 { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .sb { padding: 36px 16px; }
+  .sb-steps-list, .sb-cards { grid-template-columns: 1fr; }
+  .sb-feature, .sb-cta-box { padding: 32px 22px; border-radius: 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sb-btn, .sb-step a { transition: none; }
+  .sb-btn:hover { transform: none; }
+}

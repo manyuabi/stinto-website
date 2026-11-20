@@ -1,5 +1,13 @@
 // Snapshot www.stinto.com (WordPress) into a static site under ./site
-// Usage: node tools/mirror.mjs
+// Usage: node tools/mirror.mjs --overwrite-my-edits
+//
+// WARNING: site/ has been hand-edited since the first import (content rewrite).
+// Running this replaces every page with the live WordPress version and LOSES
+// those edits. It refuses to run without the flag above.
+if (!process.argv.includes('--overwrite-my-edits')) {
+  console.error('Refusing to run: this would overwrite edited pages in site/. Pass --overwrite-my-edits if you really mean it.');
+  process.exit(1);
+}
 // All internal links and assets are rewritten to RELATIVE paths, so the
 // output works on GitHub Pages (/stinto-website/) and on the real domain.
 import { mkdir, writeFile, readFile } from 'node:fs/promises';
