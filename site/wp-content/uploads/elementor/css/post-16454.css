@@ -1,0 +1,50 @@
+.elementor-16454 .elementor-element.elementor-element-471e0fb{--display:flex;}.elementor-widget-heading .elementor-heading-title{font-family:var( --e-global-typography-primary-font-family ), Poppins;font-size:var( --e-global-typography-primary-font-size );font-weight:var( --e-global-typography-primary-font-weight );letter-spacing:var( --e-global-typography-primary-letter-spacing );color:var( --e-global-color-primary );}.elementor-16454 .elementor-element.elementor-element-53e22e9{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}.elementor-16454 .elementor-element.elementor-element-2c65ec1{--spacer-size:50px;}.elementor-16454 .elementor-element.elementor-element-b9576aa{--display:flex;--min-height:15px;--border-radius:50px 50px 50px 50px;}.elementor-16454 .elementor-element.elementor-element-b9576aa:not(.elementor-motion-effects-element-type-background), .elementor-16454 .elementor-element.elementor-element-b9576aa > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-3817b6b );}.elementor-16454 .elementor-element.elementor-element-72d4d79 .elementor-heading-title{font-size:var( --e-global-typography-2d0dcf9-font-size );color:var( --e-global-color-e2adf7a );}.elementor-widget-text-editor{font-family:var( --e-global-typography-text-font-family ), Poppins;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );color:var( --e-global-color-text );}.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:var( --e-global-color-primary );}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-16454 .elementor-element.elementor-element-6eedbdf{font-family:"CircularXX", Poppins;font-size:27px;font-weight:300;color:#FFFFFF;}.elementor-widget-button .elementor-button{background-color:var( --e-global-color-accent );font-family:var( --e-global-typography-accent-font-family ), Poppins;font-size:var( --e-global-typography-accent-font-size );font-weight:var( --e-global-typography-accent-font-weight );}.elementor-16454 .elementor-element.elementor-element-899220a .elementor-button{background-color:var( --e-global-color-e20118d );font-size:var( --e-global-typography-46ff84f-font-size );font-weight:var( --e-global-typography-46ff84f-font-weight );fill:var( --e-global-color-text );color:var( --e-global-color-text );}.elementor-16454 .elementor-element.elementor-element-3276a92{--display:flex;}.elementor-16454 .elementor-element.elementor-element-b78db21{--spacer-size:109px;}@media(max-width:1024px){.elementor-widget-heading .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );letter-spacing:var( --e-global-typography-primary-letter-spacing );}.elementor-16454 .elementor-element.elementor-element-72d4d79 .elementor-heading-title{font-size:var( --e-global-typography-2d0dcf9-font-size );}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );}.elementor-widget-button .elementor-button{font-size:var( --e-global-typography-accent-font-size );}.elementor-16454 .elementor-element.elementor-element-899220a .elementor-button{font-size:var( --e-global-typography-46ff84f-font-size );}}@media(max-width:767px){.elementor-widget-heading .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );letter-spacing:var( --e-global-typography-primary-letter-spacing );}.elementor-16454 .elementor-element.elementor-element-72d4d79 .elementor-heading-title{font-size:var( --e-global-typography-2d0dcf9-font-size );}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );}.elementor-widget-button .elementor-button{font-size:var( --e-global-typography-accent-font-size );}.elementor-16454 .elementor-element.elementor-element-899220a .elementor-button{font-size:var( --e-global-typography-46ff84f-font-size );}}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'CircularXX';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('../../CircularXXTT-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CircularXX';
+	font-style: normal;
+	font-weight: 100;
+	font-display: auto;
+	src: url('../../CircularXXTT-Thin.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CircularXX';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('../../CircularXXTT-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CircularXX';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url('../../CircularXXTT-Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CircularXX';
+	font-style: normal;
+	font-weight: 800;
+	font-display: auto;
+	src: url('../../CircularXXTT-Black.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CircularXX';
+	font-style: normal;
+	font-weight: 900;
+	font-display: auto;
+	src: url('../../CircularXXTT-ExtraBlack.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CircularXX';
+	font-style: italic;
+	font-weight: 500;
+	font-display: auto;
+	src: url('../../CircularXXTT-MediumItalic.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */

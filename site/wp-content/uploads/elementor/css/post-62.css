@@ -1,0 +1,50 @@
+.elementor-62 .elementor-element.elementor-element-a12de7e:not(.elementor-motion-effects-element-type-background), .elementor-62 .elementor-element.elementor-element-a12de7e > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-853a94c );}.elementor-62 .elementor-element.elementor-element-a12de7e, .elementor-62 .elementor-element.elementor-element-a12de7e > .elementor-background-overlay{border-radius:50px 50px 50px 50px;}.elementor-62 .elementor-element.elementor-element-a12de7e{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-62 .elementor-element.elementor-element-a12de7e > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-62 .elementor-element.elementor-element-533a012 > .elementor-element-populated, .elementor-62 .elementor-element.elementor-element-533a012 > .elementor-element-populated > .elementor-background-overlay, .elementor-62 .elementor-element.elementor-element-533a012 > .elementor-background-slideshow{border-radius:50px 50px 50px 50px;}.elementor-62 .elementor-element.elementor-element-8f68614{--spacer-size:50px;}.elementor-widget-image .widget-image-caption{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Poppins;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );}.elementor-62 .elementor-element.elementor-element-79fab4b{--spacer-size:50px;}.elementor-widget-text-editor{font-family:var( --e-global-typography-text-font-family ), Poppins;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );color:var( --e-global-color-text );}.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:var( --e-global-color-primary );}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-62 .elementor-element.elementor-element-011f0ee{text-align:start;font-size:var( --e-global-typography-8f656b3-font-size );color:var( --e-global-color-text );}.elementor-62 .elementor-element.elementor-element-42a8237{column-gap:0px;text-align:start;font-family:"CircularXX", Poppins;font-size:21px;color:var( --e-global-color-text );}.elementor-62 .elementor-element.elementor-element-ebb2f07{--spacer-size:50px;}.elementor-62 .elementor-element.elementor-element-cd8175b{--spacer-size:70px;}@media(max-width:1024px){.elementor-widget-image .widget-image-caption{font-size:var( --e-global-typography-text-font-size );}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );}.elementor-62 .elementor-element.elementor-element-011f0ee{font-size:var( --e-global-typography-8f656b3-font-size );}}@media(max-width:767px){.elementor-widget-image .widget-image-caption{font-size:var( --e-global-typography-text-font-size );}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );}.elementor-62 .elementor-element.elementor-element-011f0ee{font-size:var( --e-global-typography-8f656b3-font-size );}}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'CircularXX';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('../../CircularXXTT-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CircularXX';
+	font-style: normal;
+	font-weight: 100;
+	font-display: auto;
+	src: url('../../CircularXXTT-Thin.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CircularXX';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('../../CircularXXTT-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CircularXX';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url('../../CircularXXTT-Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CircularXX';
+	font-style: normal;
+	font-weight: 800;
+	font-display: auto;
+	src: url('../../CircularXXTT-Black.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CircularXX';
+	font-style: normal;
+	font-weight: 900;
+	font-display: auto;
+	src: url('../../CircularXXTT-ExtraBlack.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CircularXX';
+	font-style: italic;
+	font-weight: 500;
+	font-display: auto;
+	src: url('../../CircularXXTT-MediumItalic.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */

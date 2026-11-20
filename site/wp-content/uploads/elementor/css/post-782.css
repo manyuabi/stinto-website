@@ -1,0 +1,50 @@
+.elementor-782 .elementor-element.elementor-element-dbebe1e:not(.elementor-motion-effects-element-type-background), .elementor-782 .elementor-element.elementor-element-dbebe1e > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-853a94c );}.elementor-782 .elementor-element.elementor-element-dbebe1e, .elementor-782 .elementor-element.elementor-element-dbebe1e > .elementor-background-overlay{border-radius:50px 50px 50px 50px;}.elementor-782 .elementor-element.elementor-element-dbebe1e{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-782 .elementor-element.elementor-element-dbebe1e > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-782 .elementor-element.elementor-element-76205b5{--spacer-size:50px;}.elementor-widget-image .widget-image-caption{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Poppins;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );}.elementor-782 .elementor-element.elementor-element-bba2a7d{--spacer-size:50px;}.elementor-widget-text-editor{font-family:var( --e-global-typography-text-font-family ), Poppins;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );color:var( --e-global-color-text );}.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:var( --e-global-color-primary );}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-782 .elementor-element.elementor-element-5351cc3{text-align:start;font-family:"CircularXX", Poppins;font-size:20px;font-weight:300;color:var( --e-global-color-text );}.elementor-782 .elementor-element.elementor-element-c741f9c{--spacer-size:50px;}.elementor-782 .elementor-element.elementor-element-d4f5748{--spacer-size:70px;}@media(max-width:1024px){.elementor-widget-image .widget-image-caption{font-size:var( --e-global-typography-text-font-size );}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );}}@media(max-width:767px){.elementor-widget-image .widget-image-caption{font-size:var( --e-global-typography-text-font-size );}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );}}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'CircularXX';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('../../CircularXXTT-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CircularXX';
+	font-style: normal;
+	font-weight: 100;
+	font-display: auto;
+	src: url('../../CircularXXTT-Thin.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CircularXX';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('../../CircularXXTT-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CircularXX';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url('../../CircularXXTT-Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CircularXX';
+	font-style: normal;
+	font-weight: 800;
+	font-display: auto;
+	src: url('../../CircularXXTT-Black.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CircularXX';
+	font-style: normal;
+	font-weight: 900;
+	font-display: auto;
+	src: url('../../CircularXXTT-ExtraBlack.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CircularXX';
+	font-style: italic;
+	font-weight: 500;
+	font-display: auto;
+	src: url('../../CircularXXTT-MediumItalic.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */
