@@ -46,3 +46,23 @@ Each file covers one page:
 8. **Dashboard:** shows leads per event, so a "Know which events deliver" section is added.
 
 FAQ questions whose answers weren't confirmed (editing notes, CRM logging of follow-ups, dashboard access) were **removed** rather than guessed.
+
+## Batch 3: commercial and trust pages (drafts)
+| # | Page | File |
+|---|---|---|
+| 12 | Plans (pricing) | `12-plans.md` |
+| 13 | Customer stories | `13-customer-stories.md` |
+| 14 | Security & compliance | `14-security.md` |
+| 15 | Events | `15-events.md` |
+| 16 | Book a demo | `16-book-a-demo.md` |
+| 17 | Contact us | `17-contact.md` |
+
+Customer quotes are kept word for word.
+
+### Batch 3 facts (confirmed 2026-11-24)
+1. **Business price:** €99 per person per month, billed yearly.
+2. **Plans:** everything, including AI enrichment and the dashboard, is in both Business and Enterprise.
+3. **No free plan or free trial.** The free-plan FAQ is dropped, and "Get started free" buttons become "Get started".
+4. **Security:** lead data is hosted in the EU and owned by the company, and leads stay with the company when an employee leaves.
+5. **Demo length:** not mentioned.
+6. **Events:** no upcoming events for now.

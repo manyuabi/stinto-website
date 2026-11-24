@@ -110,3 +110,16 @@
   .sb-btn, .sb-step a { transition: none; }
   .sb-btn:hover { transform: none; }
 }
+
+/* Lists inside info cards, and outcome labels above quotes */
+.sb .sb-card ul { margin: 0; padding-left: 1.1em; text-align: left; }
+.sb .sb-card li { margin: 0 0 6px; font-size: 1rem; line-height: 1.45; font-weight: 400; opacity: .9; text-align: left; }
+.sb-label { display: inline-block; margin: 0 0 12px; padding: 4px 12px; border-radius: 999px; background: #1aec7c; color: #0d4644; font-family: "CircularXX", "Poppins", -apple-system, sans-serif; font-size: .85rem; font-weight: 600; letter-spacing: .01em; }
+
+/* Book a demo intro (sits above the HubSpot calendar) */
+.sb.sb-demo { color: #fff; padding-top: 24px; }
+.sb .sb-demo-h { font-family: inherit; font-weight: 300; font-size: clamp(2rem, 4.5vw, 3.5rem); line-height: 1.1; margin: 0 0 16px; color: inherit; }
+.sb-hero--lg p { font-size: clamp(1.125rem, 1.8vw, 1.5rem); }
+.sb-demo .sb-lead { font-size: 1.25rem; }
+.sb-demo .sb-card h3 { font-size: 1.25rem; }
+.sb-demo .sb-card p { font-size: 1.05rem; }

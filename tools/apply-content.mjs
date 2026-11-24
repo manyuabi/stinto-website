@@ -110,6 +110,11 @@ function appendHtml(html, id, extra) {
   return html.slice(0, e) + extra + html.slice(e);
 }
 
+function prependHtml(html, id, extra) {
+  const [s] = widgetInner(html, id);
+  return html.slice(0, s) + extra + html.slice(s);
+}
+
 function replaceIn(html, id, from, to) {
   const [s, e] = widgetInner(html, id);
   const inner = html.slice(s, e);
@@ -159,6 +164,7 @@ for (const page of pages) {
       } else if (op.heading !== undefined) html = setHeading(html, op.id, op.heading, op.tag);
       else if (op.html !== undefined) html = setHtml(html, op.id, op.html);
       else if (op.append !== undefined) html = appendHtml(html, op.id, op.append);
+      else if (op.prepend !== undefined) html = prependHtml(html, op.id, op.prepend);
       else if (op.replace) for (const [a, b] of op.replace) html = replaceIn(html, op.id, a, b);
       else if (op.tag) html = setHeading(html, op.id, undefined, op.tag);
       else throw new Error(`unknown op ${JSON.stringify(op)}`);
@@ -168,7 +174,7 @@ for (const page of pages) {
     const inserts = (page.insert || []).map((b) => ({ at: insertAt(html, b), html: b.html }));
     inserts.sort((a, b) => b.at - a.at);
     for (const b of inserts) html = html.slice(0, b.at) + b.html + html.slice(b.at);
-    if (page.insert?.length || (page.ops || []).some((o) => o.append)) html = ensureCss(html);
+    if (page.insert?.length || (page.ops || []).some((o) => o.append || o.prepend)) html = ensureCss(html);
     if (page.jsonld) html = html.replace('</head>', `<script type="application/ld+json">${JSON.stringify(page.jsonld)}</script>\n</head>`);
     const h1s = (html.match(/<h1\b/g) || []).length;
     if (h1s !== 1) throw new Error(`page has ${h1s} <h1> elements, expected 1`);

@@ -24,8 +24,8 @@ export function strip(current, tone = 'dark') {
     + `<p class="sb-lead">From first handshake to CRM in four steps, automatically.</p><ol class="sb-steps-list">${items}</ol></section>`;
 }
 
-export function hero(text, { tone = 'dark', align = 'center', button = true } = {}) {
-  const cls = `sb-hero sb-hero--${tone}${align === 'left' ? ' sb-hero--left' : ''}`;
+export function hero(text, { tone = 'dark', align = 'center', button = true, large = false } = {}) {
+  const cls = `sb-hero sb-hero--${tone}${align === 'left' ? ' sb-hero--left' : ''}${large ? ' sb-hero--lg' : ''}`;
   return `<div class="${cls}" style="text-align:${align}">${text ? `<p>${text}</p>` : ''}`
     + (button ? `<a class="sb-btn" href="${DEMO}">Book a demo</a>` : '') + `</div>`;
 }
@@ -44,8 +44,8 @@ export function faq(items) {
 export function cta() {
   return `<section class="sb sb-cta" aria-labelledby="sb-cta-h"><div class="sb-cta-box"><h2 id="sb-cta-h">Turn every meeting into pipeline</h2>`
     + `<p class="sb-lead">Capture, follow up, enrich and sync every lead, automatically.</p>`
-    + `<div class="sb-cta-actions"><a class="sb-btn" href="${DEMO}">Book a demo</a><a class="sb-btn sb-btn--ghost" href="${SIGNUP}">Get started free</a></div>`
-    + `<p class="sb-cta-trust">No credit card required · Set up in minutes · GDPR compliant &amp; ISO 27001 certified</p></div></section>`;
+    + `<div class="sb-cta-actions"><a class="sb-btn" href="${DEMO}">Book a demo</a><a class="sb-btn sb-btn--ghost" href="${SIGNUP}">Get started</a></div>`
+    + `<p class="sb-cta-trust">Set up in minutes · GDPR compliant &amp; ISO 27001 certified</p></div></section>`;
 }
 
 export function captureChannels(tone = 'dark') {
@@ -64,3 +64,13 @@ export function captureChannels(tone = 'dark') {
 export function feature(title, text) {
   return `<section class="sb"><div class="sb-feature"><h2>${title}</h2><p>${text}</p></div></section>`;
 }
+
+// Non-link info cards: items = [[title, text | string[]]]. tone as in strip().
+export function infoCards(title, lead, items, tone = 'dark') {
+  const body = (t) => Array.isArray(t) ? `<ul>${t.map((x) => `<li>${x}</li>`).join('')}</ul>` : `<p>${t}</p>`;
+  return `<section class="sb sb-channels${tone === 'light' ? ' sb--light' : ''}"><h2>${title}</h2>${lead ? `<p class="sb-lead">${lead}</p>` : ''}`
+    + `<div class="sb-cards">${items.map(([h, t]) => `<div class="sb-card"><h3>${h}</h3>${body(t)}</div>`).join('')}</div></section>`;
+}
+
+// Small outcome label placed above a customer quote
+export const label = (text) => `<p class="sb-label">${text}</p>`;
