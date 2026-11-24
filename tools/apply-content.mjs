@@ -135,9 +135,10 @@ function setSeo(html, { title, description }) {
   } else {
     h = h.replace(/<\/title>/, `</title>\n<meta name="description" content="${D}" />`);
   }
-  // Yoast JSON-LD repeats the title and description
-  h = h.split(`"name":"${oldTitle}"`).join(`"name":"${title.replace(/"/g, '\\"')}"`);
-  if (oldDesc) h = h.split(`"description":"${oldDesc}"`).join(`"description":"${description.replace(/"/g, '\\"')}"`);
+  // Yoast JSON-LD repeats the title and description, with HTML entities decoded
+  const dec = (s) => s.replace(/&#0?39;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, '&');
+  for (const t of new Set([oldTitle, dec(oldTitle)])) h = h.split(`"name":"${t}"`).join(`"name":"${title.replace(/"/g, '\\"')}"`);
+  if (oldDesc) for (const d of new Set([oldDesc, dec(oldDesc)])) h = h.split(`"description":"${d}"`).join(`"description":"${description.replace(/"/g, '\\"')}"`);
   return h + html.slice(head.length);
 }
 

@@ -20,6 +20,21 @@ Each file covers one page:
 | 6 | CRM integrations | `06-crm-integrations.md` |
 | 7 | Company dashboard | `07-company-dashboard.md` |
 
+## Batch 2: capture channels (drafts)
+| # | Page | File |
+|---|---|---|
+| 8 | Digital business card | `08-digital-business-card.md` |
+| 9 | StintoTap NFC card | `09-stintotap.md` |
+| 10 | AI business card scanner | `10-business-card-scanner.md` |
+| 11 | Two-way exchange | `11-two-way-exchange.md` |
+
+### Batch 2 facts (confirmed 2026-11-24)
+1. **StintoTap variants:** Essence, Custom and Wood, all work with every plan. Custom and Wood have minimum orders.
+2. **StintoTap phones:** all modern iPhones and Android phones with NFC. Every card also has a QR code.
+3. **Scanner stats:** 96% accuracy, 30+ languages, 2 sec, with the source "capacitor/partners study", kept as is.
+4. **Live contacts:** still update automatically when a contact who joins Stinto changes jobs.
+5. **Two-way exchange:** the other person enters their details on a web page, with no app.
+
 ## Facts (confirmed 2026-11-20)
 1. **Integrations:** 9,000+ apps via Zapier, used on every page.
 2. **How CRMs connect:** two ways, Zapier (no code) or the open API. HubSpot, Salesforce and Microsoft Dynamics 365 are named as the main CRMs.
