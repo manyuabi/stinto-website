@@ -66,3 +66,11 @@ Customer quotes are kept word for word.
 4. **Security:** lead data is hosted in the EU and owned by the company, and leads stay with the company when an employee leaves.
 5. **Demo length:** not mentioned.
 6. **Events:** no upcoming events for now.
+
+## Batch 4: light touch (drafts)
+| # | Page | File |
+|---|---|---|
+| 18 | Sustainability | `18-sustainability.md` |
+| 19 | Blog and videos | `19-blog-and-videos.md` |
+| 20 | Careers and the 2 job pages | `20-careers.md` |
+| 21 | Privacy, cookie and terms pages (titles only) | `21-legal.md` |

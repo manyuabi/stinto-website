@@ -123,3 +123,6 @@
 .sb-demo .sb-lead { font-size: 1.25rem; }
 .sb-demo .sb-card h3 { font-size: 1.25rem; }
 .sb-demo .sb-card p { font-size: 1.05rem; }
+
+/* H1 added to legal pages (inside the light grey card) */
+.sb-legal-h { font-family: "CircularXX", "Poppins", -apple-system, sans-serif; font-weight: 300; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; color: #0d4644; text-align: left; margin: 0 0 24px; }

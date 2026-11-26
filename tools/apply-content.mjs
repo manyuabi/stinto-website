@@ -133,10 +133,10 @@ function setSeo(html, { title, description }) {
   h = h.replace(/<title>[^<]*<\/title>/, `<title>${T}</title>`);
   h = h.replace(/(<meta property="og:title" content=")[^"]*"/, `$1${T}"`);
   h = h.replace(/(<meta name="twitter:title" content=")[^"]*"/, `$1${T}"`);
+  h = h.replace(/(<meta property="og:description" content=")[^"]*"/, `$1${D}"`);
+  h = h.replace(/(<meta name="twitter:description" content=")[^"]*"/, `$1${D}"`);
   if (oldDesc !== undefined) {
     h = h.replace(/(<meta name="description" content=")[^"]*"/, `$1${D}"`);
-    h = h.replace(/(<meta property="og:description" content=")[^"]*"/, `$1${D}"`);
-    h = h.replace(/(<meta name="twitter:description" content=")[^"]*"/, `$1${D}"`);
   } else {
     h = h.replace(/<\/title>/, `</title>\n<meta name="description" content="${D}" />`);
   }
