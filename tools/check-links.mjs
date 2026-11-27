@@ -14,7 +14,12 @@ const files = execSync(`find . -name '*.html' -o -name '*.css'`, { cwd: SITE }).
 const missing = new Map();
 const live = new Map();
 for (const f of files) {
-  const t = readFileSync(join(SITE, f), 'utf8');
+  // Canonical, og:/twitter: tags and JSON-LD point at the production domain on purpose.
+  const t = readFileSync(join(SITE, f), 'utf8')
+    .replace(/<link rel="canonical"[^>]*>/g, '')
+    .replace(/<base [^>]*>/g, '')
+    .replace(/<meta (?:property|name)="(?:og|twitter):[^>]*>/g, '')
+    .replace(/<script type="application\/ld\+json"[\s\S]*?<\/script>/g, '');
   const refs = [...t.matchAll(/(?:href|src|srcset|data-src)="([^"]+)"/g)]
     .filter((m) => !m[1].startsWith('data:'))
     .flatMap((m) => m[1].split(',').map((s) => s.trim().split(/\s+/)[0]))

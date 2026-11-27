@@ -23,6 +23,8 @@ createServer(async (req, res) => {
     res.end(data);
   } catch {
     console.log('404', req.url);
-    res.writeHead(404); res.end('not found');
+    // Like GitHub Pages: serve site/404.html for missing URLs.
+    try { const nf = await readFile(join(SITE, '404.html')); res.writeHead(404, { 'content-type': TYPES['.html'] }); res.end(nf); }
+    catch { res.writeHead(404); res.end('not found'); }
   }
 }).listen(PORT, () => console.log(`Preview: http://localhost:${PORT}${BASE}/`));
